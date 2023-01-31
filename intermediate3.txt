@@ -1,0 +1,23 @@
+100EUR=bill1
+50EUR=bill2
+20EUR=bill3
+10EUR=bill4
+
+let 10 = (1)bill4
+let 20 = (1)bill3
+let 30 = (1)bill3 + (1)bill4
+let 40 = (2)bill3
+let 50 = (1)bill2
+let 60 = (1)bill2 + (1)bill4
+let 70 = (1)bill2 + (1)bill3
+let 80 = (1)bill2 + (2)bill3 + (1)bill4
+let 90 = (1)bill2 + (2)bill3
+let 100 = (1)bill1
+
+let N = withdraw amount
+if N = 280, then ATM gives 2(bill1) + 50 + 30
+
+if >=(VAR), then send message: ATM machine should be refilled
+
+if 50 not avaiable, use [(2)40 + (1)10]
+
