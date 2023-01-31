@@ -11,6 +11,9 @@ if 1 > Index(x), then ignore Index(x)
         Store largest number in orderedIndex. 
 
 reset maxValueIndex = 2
-Start 'find maximum'
 
-Repeat until 0.
+Start 'find maximum'
+    if any Index(x) = (x)OrderedIndex, then ignore that Index(x)
+   
+
+Repeat until orderedIndex reaches 1.
