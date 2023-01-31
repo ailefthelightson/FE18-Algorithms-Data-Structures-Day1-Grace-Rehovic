@@ -1,0 +1,16 @@
+maxValueIndex = 1
+
+Start 'find maximum'
+
+if 1 <= Index(x), then maxValueIndex = x
+if 1 > Index(x), then ignore Index(x)
+    Go to next index number. 
+        If either x or 1 <= Index(x), then maxValueIndex = Index(x)
+
+        Repeat until end of index.
+        Store largest number in orderedIndex. 
+
+reset maxValueIndex = 2
+Start 'find maximum'
+
+Repeat until 0.
