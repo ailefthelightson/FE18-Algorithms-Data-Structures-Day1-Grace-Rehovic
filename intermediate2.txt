@@ -1,0 +1,28 @@
+let N = Seconds
+
+let 1week = 604,800
+let 1day = 86,400
+let 1hour = 3,600
+let 1min = 60
+
+If N >= 604,800, then (N / 1week) = "(x)weeks" + R(x)
+    if R(x)=0, then answer = "(x)weeks"
+        if R(x)>= 86,400, then R(x) / 1day = "(x)weeks", "(x)days" + R(x)
+            if R(x)=0 then answer = "(x)weeks", "(x)days"
+            if R(x) >= 3,600, then R(x) / 1hour = "(x)weeks", "(x)days", "(x)hours" + R(x)
+                if R(x) = 0, then answer = "(x)weeks", "(x)days", "(x)hours"
+                if R(x) >= 60, then R(x) /1min = "(x)weeks", "(x)days", "(x)hours" + R(x)
+                    if R(x) = 0, then answer = "(x)weeks", "(x)days", "(x)hours"
+                    if R(x)<60, then answer = "(x)weeks", "(x)days", "(x)hours" and "(x)seconds"
+        if R(x) < 86,400 then ask R(x)>=3600 
+                    if R(x)>=3600, then R(x) / 1day = "(x)weeks", "(x)hours" + R(x)
+                        if R(x)=0 then answer "(x)weeks", "(x)hours"
+                        if R(x)>=60, then R(x) / 1min = "(x)weeks", "(x)hours", "(x)mins" +R(x)
+                            if R(x)=0, then answer "(x)weeks", "(x)hours", "(x)mins"
+                            if R(x)<60, then answer "(x)weeks", "(x)hours", "(x)mins" and "(x)seconds"
+                    if R(x)<3600, then ask R(x)>=60
+                        if R(x)>=60, then R(x) / 1min = "(x)weeks, "(x)mins" + R(x)
+                            if R(x)=0, then answer = "(x)weeks, "(x)mins"
+                            if R(x)<=59, then answer = "(x)weeks, "(x)mins" and "(x)seconds"
+                        if R(x)<=59, then answer = "(x)weeks and "(x)seconds"
+
